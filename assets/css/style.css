@@ -1,0 +1,922 @@
+    /*
+========================= Table of content ==========================
+1.Reset css
+2.Header
+3.Slide
+4.Wine
+5.Product section
+6.Bg video section
+7.List drink section
+8.Slide text section
+9.Instagram section
+10.Service section
+11.Footer
+
+
+
+*/
+    /* =============== 1.Reset css =============== */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .dflex {
+        display: flex;
+    }
+    
+    .justify-content-center {
+        justify-content: center;
+    }
+    
+    .justify-content-around {
+        justify-content: space-around;
+    }
+    
+    .align-items-center {
+        align-items: center;
+    }
+    
+    .align-items-flex-end {
+        align-items: flex-end;
+    }
+    
+    img {
+        width: 100%;
+        display: block;
+    }
+    
+    .h-100 {
+        height: 100%;
+    }
+    
+    button:focus {
+        outline: none;
+    }
+    
+    .w-100 {
+        width: 100%;
+    }
+    
+    button {
+        border: none;
+    }
+    
+    .flex-column {
+        flex-direction: column;
+    }
+    
+    .ml-auto {
+        margin-left: auto;
+    }
+    
+    .mr-auto {
+        margin-right: auto;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    
+    textarea:focus {
+        outline: none;
+    }
+    
+    button {
+        border: none;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    .bg-light {
+        background-color: var(--light);
+    }
+    
+    .text-white {
+        color: #fff;
+    }
+    
+    .bg-primary {
+        background-color: var(--primary);
+    }
+    
+    .text-primary {
+        color: var(--primary);
+    }
+    
+    .text-uppercase {
+        text-transform: uppercase;
+    }
+    
+    .text-right {
+        text-align: right;
+    }
+    
+    .bg-white {
+        background-color: var(--white);
+    }
+    
+    .text-dark {
+        color: var(--dark);
+    }
+    
+    .text-black {
+        color: var(--black);
+    }
+    
+    .text-gray {
+        color: var(--gray);
+    }
+    
+    .justify-content-between {
+        justify-content: space-between;
+    }
+    
+    .bg-black {
+        background-color: var(--black);
+    }
+    
+     :root {
+        --body-color: #333;
+        --accent-color: #000;
+        --border-color: #ebebeb;
+        --form-border-color: #e1e1e1;
+        --border-dark: #959595;
+        --quote-icon-color: #666;
+        --text-color: #666;
+        --bg-dark: #959595;
+        --black-color: #000;
+        --white-color: #fff;
+        --breadcrumb-color: #666;
+        --breakcrumb-active-color: #000;
+        --bg-social-icon: #333940;
+        --bg-block-color: #f5f5f5;
+        --color-button: #fff;
+        --color-hover-button: #fff;
+        --bg-button: #000;
+        --bg-hover-button: #666;
+        --date-color: #999;
+        --title-color: #000;
+        --title-hover-color: #666;
+        --link-color: #000;
+        --link-hover-color: #959595;
+        --footer-bg: #f5f5f5;
+        --footer-color: #000;
+        --product-title: #000;
+        --product-title-hover: #666;
+        --product-title-detail: #000;
+        --product-button-hover: #666;
+        --new-bg: #00AEEF;
+        --stock-bg: #56B400;
+        --red-bg: #EE1C25;
+        --block-color: #f56f5e;
+        --dark-red-color: #cc0000;
+        --star-color: #ffcc33;
+        --price-color: #959595;
+        --del-price-color: #959595;
+        --sale-price-color: #000;
+        --forward-btn-bg: #ebebeb;
+    }
+    
+    input {
+        border: none;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .p0 {
+        padding: 0;
+    }
+    
+    .ml-15 {
+        margin-left: 15px;
+    }
+    
+    body {
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    /* =============== 2. Header =============== */
+    
+    .header {
+        z-index: 10;
+        position: relative;
+    }
+    
+    .headerTop .logo img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+    
+    .headerTop {
+        height: 9.3rem;
+        justify-content: space-between;
+    }
+    
+    .headerTop .list_menu .list_item {}
+    
+    .headerTop .list_menu .list_item:nth-child(1)>.list_link::after {
+        font-family: "FontAwesome";
+        content: "\f078";
+        font-size: 9px;
+        padding-left: 13px;
+    }
+    
+    .headerTop .list_menu .list_item:nth-child(2)>.list_link::after {
+        font-family: "FontAwesome";
+        content: "\f078";
+        font-size: 9px;
+        padding-left: 13px;
+    }
+    
+    .headerTop .list_menu .list_item:nth-child(3)>.list_link::after {
+        font-family: "FontAwesome";
+        content: "\f078";
+        font-size: 9px;
+        padding-left: 13px;
+    }
+    
+    .headerTop .list_menu .list_item>.list_link {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        color: #333;
+        font-weight: 600;
+        font-family: sans-serif;
+        padding: 3.5rem 2rem 3.5rem 3rem;
+    }
+    
+    .headerTop .list_menu .list_item:nth-child(2) {
+        position: relative;
+    }
+    
+    .headerTop .list_menu .list_item .sub_menu {
+        position: absolute;
+        top: 15rem;
+        background-color: #fff;
+        width: 25rem;
+        box-shadow: 0 4px 8px 2px rgba(18, 18, 18, 0.06);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+    .headerTop .list_menu .list_item .sub_menu .list_item_sub {
+        padding: 2rem;
+    }
+    
+    .headerTop .list_menu .list_item .mega_menu .row>[class*=col] {
+        padding: 3rem 1.5rem;
+    }
+    
+    .headerTop .list_menu .list_item .mega_menu .title {
+        font-size: 2.4rem;
+        padding-bottom: 2rem;
+    }
+    
+    .headerTop .list_menu .list_item .mega_menu .mega_menu_item .list_item_sub {
+        padding: 2rem 0;
+    }
+    
+    .headerTop .list_menu .list_item .mega_menu .mega_menu_item .list_item_sub .list_link {
+        color: #000;
+        font-size: 1.6rem;
+    }
+    
+    .headerTop .list_menu .list_item .mega_menu {
+        position: absolute;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 2px rgba(18, 18, 18, 0.06);
+        opacity: 0;
+        top: 12rem;
+        transition: 0.5s;
+    }
+    
+    .headerTop .list_menu .list_item:hover .mega_menu {
+        opacity: 1;
+        top: 9rem;
+    }
+    
+    .headerTop .list_menu .list_item:hover .sub_menu {
+        opacity: 1;
+        top: 9rem;
+    }
+    
+    .headerTop .list_menu .list_item .sub_menu .list_item_sub .list_link {
+        color: #333;
+        font-size: 1.6rem;
+    }
+    
+    .headerTop .list_menu .list_item .mega_menu {
+        width: 100%;
+        background-color: #fff;
+    }
+    
+    .header .headerTop .menu .icon_search {
+        padding-left: 3rem;
+    }
+    
+    .header .headerTop .icon_search .list_link i {
+        font-size: 2rem;
+        color: #383838;
+    }
+    
+    .header .headerTop .icon_search .list_link i {
+        margin-right: 1.5rem;
+    }
+    
+    .headerTop .icon {
+        display: none;
+    }
+    
+    .headerTop .logo {
+        flex: 1;
+        padding-left: 5rem;
+    }
+    
+    .headerTop .menu {
+        flex: 1;
+    }
+    /* ======================== 3.Slide ==================== */
+    
+    .slide {
+        background-color: var(--block-color);
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slide .text {
+        text-align: center;
+    }
+    
+    .slide .text .title {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+        text-transform: uppercase;
+    }
+    
+    .slide .text .desc:nth-child(2) {
+        font-size: 5rem;
+        padding-bottom: 2rem;
+        text-transform: uppercase;
+    }
+    
+    .slide .text .desc:nth-child(3) {
+        font-size: 1.6rem;
+        padding-bottom: 4rem;
+    }
+    
+    .slide .text span {
+        text-transform: uppercase;
+        padding: 2rem 2.5rem;
+        background-color: #6a0921;
+        font-size: 1.3rem;
+        transition: 0.3s;
+        position: relative;
+        display: flex;
+        width: 25rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .slide .text span .line_right {
+        width: 3rem;
+        height: 2px;
+        background-color: #fff;
+        margin-left: 1.5rem;
+        transition: 0.3s;
+    }
+    
+    .slide .text span .line_left {
+        width: 0rem;
+        height: 2px;
+        background-color: #fff;
+        margin-right: 1.5rem;
+        transition: 0.3s;
+    }
+    
+    .slide .text span i {
+        position: absolute;
+        right: 3.8rem;
+    }
+    
+    .slide .text span:hover .line_left {
+        width: 3rem;
+    }
+    
+    .slide .text span:hover .line_right {
+        width: 0;
+    }
+    /* ======================== 4. Wines  ==================== */
+    
+    .wines {}
+    
+    .wines .row {
+        margin: 0em;
+    }
+    
+    .wines .row>[class*=col] {
+        padding: 0;
+    }
+    
+    .wines .list_wines {
+        position: relative;
+    }
+    
+    .wines .list_wines .text {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-20%, -50%);
+    }
+    
+    .wines .list_wines .text .title {
+        font-size: 2.5rem;
+        padding-bottom: 3rem;
+    }
+    
+    .wines .list_wines .text .desc {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .wines .list_wines .text .link {
+        color: var(--product-title-detail);
+        font-size: 1.6rem;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .wines .list_wines .text .link::after {
+        position: absolute;
+        content: "";
+        background-color: var(--product-title-detail);
+        width: 30px;
+        height: 2px;
+        bottom: -10px;
+        left: 0;
+        transition: 0.3s ease;
+    }
+    
+    .wines .list_wines .text .link:hover::after {
+        display: block;
+        width: 100%;
+    }
+    
+    .wines .list_wines .image {
+        overflow: hidden;
+    }
+    
+    .wines .list_wines .image img {
+        transition: 0.3s;
+    }
+    
+    .wines .list_wines .image img:hover {
+        transform: scale(1.1);
+    }
+    /* ======================= 5. Product section ===============*/
+    
+    .product {
+        padding: 5rem 0;
+    }
+    
+    .product .product_heading {
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    
+    .product .product_heading .title {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    .product .product_heading .desc {
+        color: gray;
+        font-style: italic;
+        font-size: 1.6rem;
+    }
+    
+    .product .list_product {}
+    
+    .product .list_product .list_item {
+        position: relative;
+        padding: 0 2rem 4rem 2rem;
+        transition: 0.3s;
+    }
+    
+    .product .list_product .list_item .image {
+        padding-bottom: 2rem;
+    }
+    
+    .product .list_product .list_item .text {
+        padding-bottom: 3rem;
+        transition: 0.3s;
+    }
+    
+    .product .list_product .list_item .text .name {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .product .list_product .list_item .text .price {
+        font-size: 1.6rem;
+        color: gray;
+    }
+    
+    .product .list_product .list_item .action {
+        display: flex;
+        transition: 0.3s;
+        position: absolute;
+        bottom: 0rem;
+        overflow: hidden;
+        width: calc(100% - 40px);
+        justify-content: space-between;
+        visibility: hidden;
+    }
+    
+    .product .list_product .list_item .action .list_link .add_to_cart {
+        color: black;
+        font-size: 1.6rem;
+        margin-right: auto;
+    }
+    
+    .product .list_product .list_item .action .icons i {
+        color: var(--breakcrumb-active-color);
+        font-size: 1.6rem;
+    }
+    
+    .product .list_product .list_item .action .icons i {
+        margin-right: 1.5rem;
+    }
+    
+    .product .list_product .list_item:hover {
+        background-color: #fff;
+        box-shadow: 0 4px 8px 2px rgba(18, 18, 18, 0.06);
+    }
+    
+    .product .list_product .list_item .image {
+        overflow: hidden;
+    }
+    
+    .product .list_product .list_item .image img {
+        transition: 0.3s;
+    }
+    
+    .product .list_product .list_item:hover img {
+        transform: translateY(-10px);
+    }
+    
+    .product .list_product .list_item:hover .action {
+        visibility: visible;
+        bottom: 3rem;
+    }
+    
+    .product .list_product .list_item:hover .text {
+        transform: translateY(-10px);
+    }
+    
+    .product .list_product .list_item .sale {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 2rem;
+    }
+    
+    .product .list_product .list_item .sale .text {
+        padding: 5px;
+        font-size: 1.2rem;
+        background-color: var(--block-color);
+        border: 1px solid;
+    }
+    /* ======================== 6. Bg video section  ==================== */
+    
+    .bg_video {
+        /* padding: 8rem 0; */
+    }
+    
+    .bg_video .text {}
+    
+    .bg_video .text .title {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    
+    .bg_video .text .address {
+        color: gray;
+        padding-bottom: 5rem;
+        font-size: 1.6rem;
+    }
+    
+    .bg_video .text .desc {
+        line-height: 1.5;
+        font-size: 1.6rem;
+        padding-bottom: 4rem;
+    }
+    
+    .bg_video .button {
+        text-align: center;
+    }
+    
+    .bg_video .button button {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.6rem;
+        padding: 2rem 3rem;
+        background-color: #6a0921;
+    }
+    
+    .bg_video .image {
+        opacity: 0.5;
+    }
+    
+    .bg_video .image_video {
+        position: relative;
+    }
+    
+    .bg_video .image_video .icon_play .play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 11rem;
+        height: 11rem;
+    }
+    
+    .bg_video .image_video .icon_play .play .stroke-solid {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 300;
+        stroke-width: 4px;
+        transition: stroke-dashoffset 1s ease, opacity 1s ease;
+    }
+    
+    .bg_video .image_video .icon_play .play .stroke-dotted {
+        opacity: 0;
+        stroke-dasharray: 4, 5;
+        stroke-width: 1px;
+        transform-origin: 50% 50%;
+        animation: spin 4s infinite linear;
+        transition: opacity 1s ease, stroke-width 1s ease;
+    }
+    
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .bg_video .image_video .icon_play .play {
+        transform-origin: 50% 50%;
+        transition: 200ms ease-out;
+    }
+    
+    .bg_video .image_video .icon_play .play:hover .stroke-dotted {
+        opacity: 1;
+        stroke-width: 4px;
+    }
+    
+    .bg_video .image_video .icon_play .play:hover {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .bg_video .image_video .icon_play .play:hover .stroke-solid {
+        opacity: 0;
+        stroke-dashoffset: 300;
+    }
+    /* ======================== 7. List drink   section  ==================== */
+    
+    .list_drink {}
+    
+    .list_drink .list_item {}
+    
+    .list_drink .list_item .image {
+        padding-bottom: 4rem;
+    }
+    
+    .list_drink .list_item .image img {
+        width: auto;
+    }
+    
+    .list_drink .list_item .text {}
+    
+    .list_drink .list_item .text .title {
+        font-size: 1.6rem;
+        padding-bottom: 2rem;
+    }
+    
+    .list_drink .list_item .text .desc {
+        line-height: 1.6;
+        font-size: 1.4rem;
+    }
+    /* ======================== 8.Slide text section  ==================== */
+    
+    .slide_text {
+        padding: 5rem 0;
+    }
+    
+    .slide_text .text {
+        text-align: center;
+    }
+    
+    .slide_text .text i {
+        font-size: 4rem;
+        color: #6a0921;
+    }
+    
+    .slide_text .text .desc {
+        color: gray;
+        font-size: 2.4rem;
+        font-style: italic;
+        line-height: 1.6;
+        padding: 4rem 0;
+        max-width: 80rem;
+        margin: auto;
+    }
+    
+    .slide_text .text .name {
+        font-size: 1.8rem;
+    }
+    /* ======================== 9. Instagam section ==================== */
+    
+    .instagram {
+        padding: 3rem 0;
+    }
+    
+    .instagram .instagram_heading {
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+    
+    .instagram .instagram_heading .title {
+        text-transform: uppercase;
+        font-size: 4rem;
+    }
+    
+    .instagram .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+    
+    .instagram .image {
+        position: relative;
+    }
+    
+    .instagram .image::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        content: "";
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    
+    .instagram .image:hover::before {
+        opacity: 1;
+    }
+    /* ======================== 10. Service ==================== */
+    
+    .service {
+        padding: 3rem 0;
+        background-color: #8a99c0;
+    }
+    
+    .service .list_service {}
+    
+    .service .list_service .icon {
+        font-size: 3rem;
+    }
+    
+    .service .list_service .text {
+        font-size: 1.4rem;
+        padding-left: 2rem;
+    }
+    /* ======================== 11. Footer ==================== */
+    
+    .footer {
+        background-color: var(--accent-color);
+    }
+    
+    .footer .footer_top {
+        padding: 7rem 0;
+    }
+    
+    .footer .footer_top .logo .title {
+        font-size: 2.4rem;
+        padding-bottom: 3rem;
+        color: #fff;
+    }
+    
+    .footer .footer_top .text {
+        padding-bottom: 3rem;
+        color: #fff;
+    }
+    
+    .footer .footer_top .desc {
+        padding-bottom: 3rem;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #fff;
+    }
+    
+    .footer .footer_top .text .mail {
+        font-size: 1.6rem;
+        padding-bottom: 1rem;
+    }
+    
+    .footer .footer_top .text .phone {
+        font-size: 1.6rem;
+    }
+    
+    .footer .footer_top .icon {
+        font-size: 1.6rem;
+    }
+    
+    .footer .footer_top .icon .list_link {
+        color: #ffff;
+    }
+    
+    .footer .footer_top .icon .list_link:not(:first-child) {
+        margin-left: 1.5rem;
+    }
+    
+    .footer .footer_top .menu .list_menu .list_item .list_link {
+        color: #fff;
+        font-size: 1.6rem;
+    }
+    
+    .footer .footer_top .menu .title {
+        font-size: 1.6rem;
+        padding-bottom: 3rem;
+        color: #fff;
+    }
+    
+    .footer .footer_top .menu .list_menu .list_item:not(:last-child) {
+        padding-bottom: 3rem;
+    }
+    
+    .footer .footer_top .contact .title {
+        font-size: 1.6rem;
+        padding-bottom: 3rem;
+        color: #fff;
+    }
+    
+    .footer .footer_top .contact .form {
+        position: relative;
+    }
+    
+    .footer .footer_top .contact input[type="text"] {
+        border: none;
+        border-bottom: 1px solid gray;
+        padding: 1.5rem 0 1.5rem 2rem;
+        font-size: 1.4rem;
+        background-color: var(--accent-color);
+        width: 100%;
+    }
+    
+    .footer .footer_top .contact input[type="submit"] {
+        border: none;
+        background-color: var(--accent-color);
+        color: #fff;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 600;
+        position: absolute;
+        top: 50%;
+        transform: translate(15px, -50%);
+        right: 1.5rem;
+    }
+    
+    .footer .footer_bottom {
+        border-top: 1px solid gray;
+        padding: 3rem 0;
+    }
+    
+    .footer .footer_bottom .copy_right {
+        color: #fff;
+        font-size: 1.6rem;
+    }

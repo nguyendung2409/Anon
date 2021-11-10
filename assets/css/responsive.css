@@ -1,0 +1,177 @@
+/*
+========================= Table of content ==========================
+
+2.Header
+3.Slide
+4.Wine
+5.Product section
+6.Bg video section
+7.List drink section
+8.Slide text section
+9.Instagram section
+10.Service section
+11.Footer
+
+
+
+*/
+
+
+/* =============== 2. Header =============== */
+
+@media screen and (max-width: 991px) {
+    .headerTop .icon {
+        display: block;
+        color: black;
+        font-size: 3rem;
+        position: absolute;
+        left: 1rem;
+        bottom: 1rem;
+    }
+    .headerTop .menu {
+        display: none;
+    }
+    .header .headerTop {
+        height: 6rem;
+    }
+}
+
+
+/* ======================== 3. Slide ==================== */
+
+@media screen and (max-width:1024px) {
+    .slide {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slide .text .desc:nth-child(2) {
+        font-size: 3.6rem;
+    }
+    .slide .text .title {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .slide {
+        height: 70vh;
+    }
+}
+
+
+/* ======================== 4. Wine  ==================== */
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .wines .list_wines .text .desc {
+        padding-bottom: 2rem;
+    }
+    .wines .list_wines .text .title {
+        padding-bottom: 2rem;
+    }
+}
+
+
+/* ======================= 5. Product section ===============*/
+
+@media screen and (max-width:1199px) and (min-width:992px) {
+    .product .list_product .list_item .action {
+        display: block;
+    }
+    .product .list_product .list_item .action .list_link {
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .product .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .product .list_item .image img {
+        /* height: fit-content;
+        width: auto;
+        margin: auto; */
+    }
+}
+
+
+/* ======================== 6. Bg video section  ==================== */
+
+@media screen and ( max-width: 767px) {
+    .bg_video .text .title {
+        text-align: center;
+    }
+    .bg_video .text .address {
+        text-align: center;
+    }
+}
+
+@media screen and ( max-width: 575px) {}
+
+
+/* ======================== 7.List drink section  ==================== */
+
+@media screen and (max-width:767px) {
+    .list_drink .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+}
+
+
+/* ======================== 8. Slide text section  ==================== */
+
+@media screen and (max-width: 575px) {
+    .slide_text .text .desc {
+        font-size: 2rem;
+    }
+}
+
+
+/* ======================== 9. Instagram section ==================== */
+
+@media screen and (max-width: 767px) {}
+
+
+/* ======================== 10. Service section ==================== */
+
+@media screen and (max-width: 767px) {
+    .service .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+    .service {
+        padding: 3rem 0 0 0;
+    }
+}
+
+
+/* ======================== 11. Footer ==================== */
+
+@media screen and (max-width: 1199px) {
+    .footer .footer_top .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+    .footer .footer_top {
+        padding: 5rem 0 2rem 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer .footer_bottom .content {
+        display: block;
+    }
+    .footer .footer_bottom .image img {
+        width: auto;
+        margin: auto;
+    }
+    .footer .footer_bottom .copy_right {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .footer .footer_top .contact .form {
+        max-width: 50rem;
+    }
+}
