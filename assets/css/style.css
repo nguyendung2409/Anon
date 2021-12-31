@@ -273,7 +273,7 @@
         width: 25rem;
         box-shadow: 0 4px 8px 2px rgba(18, 18, 18, 0.06);
         opacity: 0;
-        transition: 0.5s;
+        transition: 0.5s all;
     }
     
     .headerTop .list_menu .list_item .sub_menu .list_item_sub {
@@ -895,6 +895,7 @@
         font-size: 1.4rem;
         background-color: var(--accent-color);
         width: 100%;
+        color: white;
     }
     
     .footer .footer_top .contact input[type="submit"] {
